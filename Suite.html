@@ -1,0 +1,27 @@
+<head>
+	<meta charset="UTF-8">
+    <title>Test Suite</title>
+    
+    <link rel="stylesheet" type="text/css" href="base/dash.css" />
+    
+    <script type="text/javascript" src="base/dash.js"></script>
+    <script src="ext-js/canvas-gauges/gauge.min.js"></script>
+</head>
+
+<body onload="bodyLoad()" style="padding: 0px; margin: 0px; background: #efefef;">
+    <ul>
+        <li><a href="Guido.html">Dashboard</a></li>
+        <li><a class="active" href="Suite.html">Test Suite</a></li>
+    </ul>
+    <div class="flexbox column squash" style="width: 100%;">
+        <div class="flexbox row navy" style="align-items: center;flex-grow: 0; padding: 10px; margin: 0px">
+            <div style="flex: 1 0 auto">
+                <img style="height: 60px" src="assets/logo.png"/>
+            </div>
+            
+            <div id="conn_button" onclick='toggleConnection()' class="button red" style="flex: 0 0 auto; border-radius: 6px; padding: 10px; padding-left: 14px; padding-right: 14px;">
+                <font id="conn_button_text" style="font-size: 20; font-weight: 700">Disconnected</font>
+            </div>  
+        </div>
+    </div>
+</body>

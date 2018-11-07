@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-        <title>NarwhalDashboard</title>
+        <title>Dashboard</title>
         
         <link rel="stylesheet" type="text/css" href="base/dash.css" />
         
@@ -189,7 +189,11 @@
             }
         </script>
 	</head>
-	<body onload="bodyLoad()" style="padding: 0px; margin: 0px; background: #efefef;">
+    <body onload="bodyLoad()" style="padding: 0px; margin: 0px; background: #efefef;">
+        <ul>
+            <li><a class="active" href="Guido.html">Dashboard</a></li>
+            <li><a href="Suite.html">Test Suite</a></li>
+          </ul>
         <div class="flexbox column squash" style="width: 100%;">
 			<div class="flexbox row navy" style="align-items: center;flex-grow: 0; padding: 10px; margin: 0px">
                 <div style="flex: 1 0 auto">
@@ -199,7 +203,7 @@
                 <div id="conn_button" onclick='toggleConnection()' class="button red" style="flex: 0 0 auto; border-radius: 6px; padding: 10px; padding-left: 14px; padding-right: 14px;">
                     <font id="conn_button_text" style="font-size: 20; font-weight: 700">Disconnected</font>
                 </div>  
-			</div>
+            </div>
             
             <div class="flexbox row squash" style="align-items: stretch;">
                 <div class="flexbox column squash" style="flex: 0 0 50%;">
@@ -207,12 +211,6 @@
                         <div id="battery" style="flex: 0 0 160px; height: 160px; background: #b0b0b0; border-radius: 14px; padding: 10px; color: white; text-align: center; vertical-align: middle;">
                             <font style="font-size: 18pt; line-height: 12pt">Battery</font>
                             <canvas id="batt_gauge"></canvas>  
-                        </div>
-                            
-                        <div style="flex: 1 0 auto; text-align: center; vertical-align: middle;">
-                            <font id="match_time" style="font-size: 60pt; line-height: 64pt">118s</font>
-                            <br>
-                            <font style="font-size: 18pt; line-height: 20pt">Match Time Remaining</font>
                         </div>
                     </div>
                         
