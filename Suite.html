@@ -6,6 +6,20 @@
     
     <script type="text/javascript" src="base/dash.js"></script>
     <script src="ext-js/canvas-gauges/gauge.min.js"></script>
+
+    <script>
+        var errorCode;
+        var clear = "rgba(0,0,0,0)";
+
+        function updateData(json) {
+            errorCode = json['errorCode'];
+            setInner('errorDemo', errorCode)
+        }
+
+        function bodyLoad() {
+            addUpdater(updateData);
+        }
+    </script>
 </head>
 
 <body onload="bodyLoad()" style="padding: 0px; margin: 0px; background: #efefef;">
@@ -24,4 +38,5 @@
             </div>  
         </div>
     </div>
+    <p id="errorDemo"></p>
 </body>
