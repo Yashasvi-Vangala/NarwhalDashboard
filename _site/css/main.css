@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/../assets/open-sans.ttf"); }
+body {
+  font-family: 'Open Sans'; }
+
+.squash {
+  padding: 0px;
+  margin: 0px; }
+
+.thicc {
+  width: 100%;
+  height: 100%; }
+
+.flexbox {
+  display: flex; }
+  .flexbox.row {
+    flex-direction: row; }
+  .flexbox.column {
+    flex-direction: column; }
+
+.navy {
+  background: #1b1464;
+  color: white; }
+
+.royal {
+  background: #072682;
+  color: white; }
+
+.sapphire {
+  background: #0068a5;
+  color: white; }
+
+.pacific {
+  background: #0085b2;
+  color: white; }
+
+.red {
+  background: #e20000;
+  color: white; }
+
+.orange {
+  background: #f36d00;
+  color: white; }
+
+.green {
+  background: #00d11c;
+  color: white; }
+
+.button:hover {
+  cursor: pointer; }
+.button.navy:hover {
+  background: #0a0724; }
+.button.royal:hover {
+  background: #031139; }
+.button.sapphire:hover {
+  background: #003859; }
+.button.pacific:hover {
+  background: #004c66; }
+.button.red:hover {
+  background: #960000; }
+.button.orange:hover {
+  background: #a74b00; }
+.button.green:hover {
+  background: #008512; }
+
+.stream {
+  overflow: hidden;
+  background: #333; }
