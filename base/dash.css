@@ -8,7 +8,7 @@ body {
 }
 
 .squash {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .button.red:hover {
-    background: #ac0000;
+    background: #422727;
 }
 
 .button.orange:hover {
@@ -127,7 +127,7 @@ body {
     transition: all 0.5s ease-in-out;
 
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 ul {

@@ -9,6 +9,7 @@
             var autos = [];
 
             function connect() {
+
                 socket = new WebSocket("ws:roborio-3128-frc.local:3128");
                 
                 socket.onopen = function(event) {
@@ -49,7 +50,7 @@
 
             function ping() {
                 sendTime = new Date().getTime();
-                socket.send("ping")
+                //socket.send("ping")
             }
             
         </script>

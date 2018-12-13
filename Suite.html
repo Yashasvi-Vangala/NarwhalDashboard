@@ -9,11 +9,13 @@
 
     <script>
         var errorCode;
+        var strError;
         var clear = "rgba(0,0,0,0)";
 
         function updateData(json) {
             errorCode = json['errorCode'];
-            setInner('errorDemo', errorCode)
+            strError = "Error Code: " + errorCode;
+            setInner('errorDemo', strError)
         }
 
         function bodyLoad() {
@@ -38,5 +40,5 @@
             </div>  
         </div>
     </div>
-    <p id="errorDemo"></p>
+    <p id="errorDemo">Error Code: Not Connected...</p>
 </body>
